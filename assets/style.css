@@ -1,0 +1,212 @@
+body {
+  font-family: 'Courier New', sans-serif;
+  background-color: #E6E6FA;
+  font-weight: bold;
+  overflow-x: hidden;
+
+}
+
+h1 {
+  text-align: center;
+  color: #102040;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-left: 200px;
+  font-weight: bold;
+  opacity: 0;
+  animation: fadeIn 2s;
+  animation-delay: 1s; /* Add a 1-second delay before the animation starts */
+  animation-fill-mode: forwards;
+
+}
+
+.output-message {
+  margin-top: 20px;
+}
+
+.graph-container {
+  opacity: 0;
+  animation: fadeIn 1s;
+  animation-delay: 1s; /* Add a 1-second delay before the animation starts */
+  animation-fill-mode: forwards;
+}
+
+.message-container {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+  animation: fadeIn 7s;
+}
+
+.message {
+  display: inline-block;
+  background-color: #FF5733;
+  color: white;
+  font-weight: bold;
+  padding: 10px 32px;
+  border-radius: 5px;
+  margin-right: 20px;
+  animation: fadeIn 7s;
+
+}
+
+.rewind-btn {
+  background-color: #C70039;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 32px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 20px;
+  transition: background-color 0.3s;
+  animation: fadeIn 7s;
+}
+
+.rewind-btn:hover {
+  background-color: #0056b3;
+}
+
+.refresh:hover {
+  background-color: #0056b3;
+}
+
+
+.refresh {
+  background-color: #C70039;
+  color: white;
+  border: none;
+  font-weight: bold;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 20px;
+  transition: background-color 0.3s;
+  animation: fadeIn 7s;
+}
+
+.dropdown-wrapper {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.refresh-button-wrapper {
+    flex: 0;
+}
+
+.dropdown-container {
+  width: 50%;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-left: 572px;
+  opacity: 0;
+  animation: fadeIn 1s;
+  animation-delay: 1.25s; /* Add a 1-second delay before the animation starts */
+  animation-fill-mode: forwards;
+  position: relative;
+  z-index: 1000;
+}
+
+input[type='number'], input[type='text'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.execute {
+  background-color: #6c5ce7;
+  color: white;
+  padding: 30px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  animation: fadeIn 7s;
+}
+
+.execute:hover {
+  background-color: #4d3ebf;
+}
+
+.input-container {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  opacity: 0;
+  animation: fadeIn 2s;
+  animation-delay: 1s; /* Add a 1-second delay before the animation starts */
+  animation-fill-mode: forwards;
+  display: block;
+  margin-bottom: 10px;
+}
+
+img {
+  animation: fadeIn 2s;
+}
+
+.footer {
+    width: 100%;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    animation: fadeIn 2s;
+    animation-delay: 1.5s; /* Add a 1-second delay before the animation starts */
+    animation-fill-mode: forwards;
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Add this rule to extend the footer */
+}
+
+.footer-text {
+    color: #fff;
+    font-size: 14px;
+    margin: 0;
+}
+
+.loading {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  opacity: 0;
+  animation: fadeIn 2s;
+  animation-delay: 1s; /* Add a 1-second delay before the animation starts */
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-150%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(200%);
+    }
+    100% {
+        transform: translateY(0%);
+    }
+}
